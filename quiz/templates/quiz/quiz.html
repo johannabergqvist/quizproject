@@ -13,9 +13,12 @@
 
 <body>
 
+
+	{{ quiz.description }}
+
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 column1"><center><br><br><h1>Det här är frågesporten om blommor</h1></center></div>
+			<div class="col-md-12 column1"><center><br><br><h1>{{ quiz.name }}</h1></center></div>
 
 		</div>
 
@@ -23,18 +26,15 @@
 
 		<div class="row">
 			<div class="col-md-12"><center> <form action="johannasquiz.se/question"> 
-				<button>Starta Quiz</button>
+				<button>{{ quiz.description }}</button>
 				<br>
 			</form>
 			<img src="http://www.gallerinet.se/upload/foto/large/post8.jpg" alt="Blomma" style="width:300px;">
 
 		</div>
 
-
-
-
 			
-			<script src="https://ajax.googleapis.com/ajax/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/jquery/1.12.4/jquery.min.js"></script>
 
 		
 
