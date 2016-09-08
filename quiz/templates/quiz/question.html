@@ -15,7 +15,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 column1"><center><br><br><h1>Hur många ben har en myra? </h1></center></div>
+			<div class="col-md-12 column1"><center><br><br><h1>{{ question_number }}. {{ question }} </h1></center></div>
 
 		</div>
 
@@ -24,15 +24,15 @@
 
 		<div class="row">
 			<div class="col-xs-4"><center><p> <form action="johannasquiz.se/quiz1">
-				<button>Åtta</button>
+				<button>{{ answer1 }}</button>
 			</form></p> </center></div>
 
 			<div class="col-xs-4"><center><p> <form action="johannasquiz.se/quiz2">
-				<button>Fyra </button>
+				<button>{{ answer2 }} </button>
 			</form></p> </center></div>
 
 			<div class="col-xs-4"><center><p> <form action="johannasquiz.se/quiz3">
-				<button>Sex</button>
+				<button>{{ answer3 }}</button>
 			</form></p> </center></div>
 
 			<br>
