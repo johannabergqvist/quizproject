@@ -24,7 +24,8 @@
 			<div class="col-md-12"><center><p> Klicka på den kategori du är bäst på! </p> </center></div>
 		</div>
         <div class="row">
-{% for quiz in quizzes %}
+	
+	{% for quiz in quizzes %}
 		
 			<div class="col-xs-4"><center><p> <form action="{% url 'quiz_page' quiz.quiz_number %}">
 				<button>{{ quiz.name }}</button>
