@@ -7,6 +7,7 @@
 	<title> Johannas superquiz</title>
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/static/Johannasquiz.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 </head>
 
@@ -19,19 +20,16 @@
 
 		</div>
 
-
-		
-
 		<div class="row">
-			<div class="col-xs-4"><center><p> <form action="johannasquiz.se/quiz1">
+			<div class="col-xs-4"><center><p> <form action="{% url 'completed_page' quiz_number %}">
 				<button>{{ answer1 }}</button>
 			</form></p> </center></div>
 
-			<div class="col-xs-4"><center><p> <form action="johannasquiz.se/quiz2">
+			<div class="col-xs-4"><center><p> <form action="{% url 'completed_page' quiz_number %}">
 				<button>{{ answer2 }} </button>
 			</form></p> </center></div>
 
-			<div class="col-xs-4"><center><p> <form action="johannasquiz.se/quiz3">
+			<div class="col-xs-4"><center><p> <form action="{% url 'completed_page' quiz_number %}">
 				<button>{{ answer3 }}</button>
 			</form></p> </center></div>
 

@@ -1,21 +1,26 @@
 body {
 
 	background-color: #C0C0C0;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 0 100px 0;
 }
 
 h1 {
 
-	color: green;
-	font-family: "Courier New";
-	margin: 0 0 50px 0;
-
-
+	
+	color: black;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 70px;
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 h2 {
 
 	color: #FF00FF;
-	font-family: "Courier New";
+	font-family: "Courier New"; Times, Serif;
 	margin: 0 0 50px 0;
 
 
@@ -24,16 +29,20 @@ p {
 
 	color: #FF00FF;
 	font-family: "Courier New", Times, Serif;
+	font-size: 200%
 }
 
  
 .column1 {
-	background: lightsalmon;
+	background: #b3ffe6;
 }
 
 button {
-	background-color: #e6ffb3;
-	padding: 15px 32px
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
+
 	
 }
 
