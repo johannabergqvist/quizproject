@@ -21,16 +21,18 @@
 		</div>
 
 		<div class="row">
-			<div class="col-xs-4"><center><p> <form action="{% url 'completed_page' quiz_number %}">
-				<button>{{ answer1 }}</button>
-			</form></p> </center></div>
+		<form  action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
+		{% csrf_token %}
+			<div class="col-xs-4"><center>
+				<button type="submit" name="answer" value="1">{{ answer1 }}</button>
+			</center></div>
 
-			<div class="col-xs-4"><center><p> <form action="{% url 'completed_page' quiz_number %}">
-				<button>{{ answer2 }} </button>
-			</form></p> </center></div>
+			<div class="col-xs-4"><center><p>
+				<button type="submit" name="answer" value="2"> {{ answer2 }} </button>
+			</p> </center></div>
 
-			<div class="col-xs-4"><center><p> <form action="{% url 'completed_page' quiz_number %}">
-				<button>{{ answer3 }}</button>
+			<div class="col-xs-4"><center><p>
+				<button type="submit" name="answer" value="3">{{ answer3 }}</button>
 			</form></p> </center></div>
 
 			<br>
